@@ -1,0 +1,244 @@
+
+:root {
+    --background: "#f3e4d5";
+    --textColor: "#333333";
+    --fontbig: inter tight;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "gayathri";
+    // font-family:Bowlby One SC;
+    // font-family: major mono display;
+    // border: 1px solid red;
+    color: var(--textColor);
+    font-weight: bold;
+}
+
+body {
+    // background-color: var(--background);
+    background-color: #141414;
+    color: #ffffff;
+}
+
+i {
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+}
+
+.Home {
+  .navbar {
+    // border: 1px solid lightgrey;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+    padding: 5px;
+    
+    a, i{
+
+        font-size: clamp(1em, 1.5vw, 1.5vw);
+        text-decoration: none;
+        color: var(--textColor);
+        padding: 5px;
+        
+
+    }
+    i {padding: 5px;}
+    a { padding: 10px;
+        border-bottom: 1px solid #141414;
+
+        &:hover {
+            // color: rgb(192, 255, 66);
+            border-bottom: 1px solid lightgray;
+            color: black;
+            background-color: rgb(168, 253, 0);
+        }
+        
+    }
+  }
+
+}
+
+.container {
+    // border: 1px solid lightgrey;
+    // padding-top: 50px;
+    overflow: hidden;
+    // padding: 40px;
+    h1 {   
+        font-size: clamp(3em, 8vw, 8vw);
+    }
+    
+
+}
+
+
+.Skills {
+
+    background-color: #005B41;
+    .parent {
+        padding: 40px;
+        overflow: hidden;
+        min-width: 80vw;
+        min-height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        div {
+            font-size: clamp(1em, 2vw, 2vw);
+            padding: 10px;
+        }
+
+        .items {
+            overflow: hidden;
+
+            padding: 0px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .s {
+            div {
+            font-family: var(--fontsmall);
+
+            }
+            .banner {
+                font-family: inter tight;
+
+                font-weight: bolder;
+                border-bottom: 2px solid gray;
+            }
+        
+        }
+
+        @media only screen and (max-width: 600px) {
+            .s {
+              padding: 0    ;
+            }
+          }
+    }
+
+        
+}
+
+.Projects {
+    .parent {
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        .p {    
+            width: 40vw;
+            margin: 0px;
+            // border: 1px solid lightgray;
+            overflow: hidden;
+            p {
+                font-family: general sans light;
+            }
+
+            img {
+                max-width: 40vw;
+                background-size: contain;
+                
+            }
+        }
+        div {
+            padding: 30px;
+            
+        }
+
+        @media screen and (max-width: 600px){
+            .p {
+                width: 100vw;
+                img {
+                    max-width: 80vw;
+                }
+            }
+        }
+    }
+        
+}
+
+
+.Contact {
+    background-color: #005B41;
+
+    .parent {
+        
+        min-width: 90vw;
+        min-height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        p {
+            font-family: var(--fontsmall);
+            width: 100%;
+            text-align: end;
+            font-size: 1.4em;
+            opacity: 0.5;
+        }        
+        >div {
+
+            a {
+                
+                font-family: var(--fontsmall);
+
+                &:hover {
+                    color: rgb(191, 255, 63);
+                }
+            }    
+            padding: 30px;
+            display: flex;
+            .mailing {
+                font-size: clamp(1.4em, 6vw, 8vw);
+                h1 {
+                    font-family: inter tight;
+                }
+
+                a {
+                    font-size: 0.8em;
+                }
+            }      
+            
+            
+        }
+        
+    }
+}
+
+img {
+    // max-width: 450px;
+    // max-height: 450px;
+    // background-size: contain;
+}
+
+#section_head {
+    font-weight: bolder;
+    padding: 40px;
+    font-size: clamp(1.5em, 6vw, 8vw);
+    width: 100%;
+    text-align: end;
+}

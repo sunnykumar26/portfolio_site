@@ -1,0 +1,191 @@
+:root {
+  --background: "#f3e4d5";
+  --textColor: "#333333";
+  --fontbig: inter tight;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "gayathri";
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+body {
+  background-color: #141414;
+  color: #ffffff;
+}
+
+i {
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+}
+
+.Home .navbar {
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+  padding: 5px;
+}
+.Home .navbar a, .Home .navbar i {
+  font-size: clamp(1em, 1.5vw, 1.5vw);
+  text-decoration: none;
+  color: var(--textColor);
+  padding: 5px;
+}
+.Home .navbar i {
+  padding: 5px;
+}
+.Home .navbar a {
+  padding: 10px;
+  border-bottom: 1px solid #141414;
+}
+.Home .navbar a:hover {
+  border-bottom: 1px solid lightgray;
+  color: black;
+  background-color: rgb(168, 253, 0);
+}
+
+.container {
+  overflow: hidden;
+}
+.container h1 {
+  font-size: clamp(3em, 8vw, 8vw);
+}
+
+.Skills {
+  background-color: #005B41;
+}
+.Skills .parent {
+  padding: 40px;
+  overflow: hidden;
+  min-width: 80vw;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Skills .parent div {
+  font-size: clamp(1em, 2vw, 2vw);
+  padding: 10px;
+}
+.Skills .parent .items {
+  overflow: hidden;
+  padding: 0px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.Skills .parent .s div {
+  font-family: var(--fontsmall);
+}
+.Skills .parent .s .banner {
+  font-family: inter tight;
+  font-weight: bolder;
+  border-bottom: 2px solid gray;
+}
+@media only screen and (max-width: 600px) {
+  .Skills .parent .s {
+    padding: 0;
+  }
+}
+
+.Projects .parent {
+  min-width: 90vw;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.Projects .parent .p {
+  width: 40vw;
+  margin: 0px;
+  overflow: hidden;
+}
+.Projects .parent .p p {
+  font-family: general sans light;
+}
+.Projects .parent .p img {
+  max-width: 40vw;
+  background-size: contain;
+}
+.Projects .parent div {
+  padding: 30px;
+}
+@media screen and (max-width: 600px) {
+  .Projects .parent .p {
+    width: 100vw;
+  }
+  .Projects .parent .p img {
+    max-width: 80vw;
+  }
+}
+
+.Contact {
+  background-color: #005B41;
+}
+.Contact .parent {
+  min-width: 90vw;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Contact .parent p {
+  font-family: var(--fontsmall);
+  width: 100%;
+  text-align: end;
+  font-size: 1.4em;
+  opacity: 0.5;
+}
+.Contact .parent > div {
+  padding: 30px;
+  display: flex;
+}
+.Contact .parent > div a {
+  font-family: var(--fontsmall);
+}
+.Contact .parent > div a:hover {
+  color: rgb(191, 255, 63);
+}
+.Contact .parent > div .mailing {
+  font-size: clamp(1.4em, 6vw, 8vw);
+}
+.Contact .parent > div .mailing h1 {
+  font-family: inter tight;
+}
+.Contact .parent > div .mailing a {
+  font-size: 0.8em;
+}
+
+#section_head {
+  font-weight: bolder;
+  padding: 40px;
+  font-size: clamp(1.5em, 6vw, 8vw);
+  width: 100%;
+  text-align: end;
+}/*# sourceMappingURL=index.css.map */
